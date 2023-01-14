@@ -1,0 +1,18 @@
+@model string[]
+@{
+    ViewData["Title"] = "File Contents";
+}
+
+<div>
+    <h1 style="text-align: center"> @ViewData["Title"]</h1>
+<div>
+    <ul>
+        @foreach (var item in Model)
+        {
+            <li style="text-align: center; list-style: none;color: tomato;">
+                @item
+            </li>
+        }
+    </ul>
+</div>
+</div>
